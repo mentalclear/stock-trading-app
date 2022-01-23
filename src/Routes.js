@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-const routes = [ ];
+import { DashboardPage } from "./dashboard";
+const routes = [{
+  path: '/',
+  Component: DashboardPage,
+}];
 
 export const Routes = () => (
   <Router> 
