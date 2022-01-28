@@ -41,9 +41,9 @@ export const DashboardPage = () => {
                     yValues={prices} 
                 />
                 <div className="financial-info-section">
-                    <div className="info-item"> Current TSLA Share Price: $400</div>
+                    <div className="info-item"> Current TSLA Share Price: ${prices[prices.length-1]}</div>
                     <div className="info-item"> You currently own {numberOfSharesOwned} shares</div>
-                    <div className="info-item"> Cash Balance: {cashValue}</div>
+                    <div className="info-item"> Cash Balance: ${cashValue}</div>
                     <div className="info-item"> Portfolio Value: ${sharesValue}</div>
                     <div className="info-item"> Total Value: ${cashValue + sharesValue}</div>
                     <div>
